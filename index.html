@@ -403,6 +403,69 @@
             box-shadow: 0 0 20px rgba(182, 255, 0, 0.4);
             margin-top: 10px;
         }
+        
+        #joinus {
+            background: var(--bg2);
+        }
+        
+        .joinus-grid {
+            display: grid;
+            grid-template-columns: 1.05fr 1fr;
+            gap: 32px;
+            max-width: 1100px;
+            margin: 0 auto;
+            align-items: start;
+        }
+        
+        .joinus-copy {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        
+        .joinus-copy h2 {
+            margin: 0;
+            font-size: clamp(32px, 4vw, 52px);
+            line-height: 1.05;
+        }
+        
+        .joinus-copy p,
+        .joinus-copy li {
+            color: var(--muted);
+            line-height: 1.8;
+            font-size: 15px;
+        }
+        
+        .joinus-copy ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 12px;
+        }
+        
+        .joinus-copy ul li::before {
+            content: '✓';
+            color: var(--green);
+            margin-right: 10px;
+        }
+        
+        .joinus-iframe-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            min-height: 560px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+        }
+        
+        .joinus-iframe-card iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 560px;
+            border: 0;
+            display: block;
+        }
         /* ====== SECTIONS SHARED ====== */
         
         section {
@@ -813,9 +876,9 @@
         
         .website-samples-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 20px;
-            max-width: 1100px;
+            grid-template-columns: repeat(2, minmax(220px, 1fr));
+            gap: 18px;
+            max-width: 780px;
             margin: 0 auto;
         }
         
@@ -823,10 +886,10 @@
             background: var(--card);
             border: 1px solid var(--border);
             border-radius: var(--radius);
-            padding: 28px;
+            padding: 18px;
             display: flex;
             flex-direction: column;
-            gap: 18px;
+            gap: 14px;
             transition: transform .3s, border-color .3s;
         }
         
@@ -1429,6 +1492,7 @@
         <div class="nav-links">
             <a href="#home">Home</a>
             <a href="#services">Services</a>
+            <a href="#joinus">Join Us</a>
             <a href="#pricing">Pricing</a>
             <a href="#testimonials">Testimonials</a>
             <a href="#contact">Contact</a>
@@ -1444,6 +1508,7 @@
         <button class="mobile-close" id="mobileClose"><i class="fa fa-times"></i></button>
         <a href="#home" onclick="closeMobile()">Home</a>
         <a href="#services" onclick="closeMobile()">Services</a>
+        <a href="#joinus" onclick="closeMobile()">Join Us</a>
         <a href="#pricing" onclick="closeMobile()">Pricing</a>
         <a href="#testimonials" onclick="closeMobile()">Testimonials</a>
         <a href="#contact" onclick="closeMobile()">Contact</a>
@@ -1513,6 +1578,30 @@
                 <div class="service-icon"><i class="fa fa-graduation-cap"></i></div>
                 <h3>IT Training & Consultation</h3>
                 <p>Digital skills training and consultancy in IT, empowering teams with the tools and knowledge to compete in a modern digital economy.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- JOIN US -->
+    <section id="joinus">
+        <div class="section-header" style="text-align:center">
+            <span class="section-label">Affiliate Opportunity</span>
+            <h2 class="section-title">Join DataLife and Earn <span>Through Affiliate Marketing</span></h2>
+            <p class="section-sub" style="margin:0 auto; max-width:680px;">Share DataLife with your network, refer clients, and earn commissions when people sign up. It’s easy to get started — promote our services, grow your audience, and get paid.</p>
+        </div>
+        <div class="joinus-grid">
+            <div class="joinus-copy" data-aos="fade-right" data-aos-delay="80">
+                <p>As a DataLife member, you can earn money by referring businesses and individuals to our digital services. We provide the platform, branding, and support — you bring the connections.</p>
+                <ul>
+                    <li>Promote our affiliate program across WhatsApp, social media, and email.</li>
+                    <li>Earn commissions for every verified signup and successful referral.</li>
+                    <li>Get access to marketing materials and onboarding guidance.</li>
+                    <li>Sign up once, start promoting immediately, and scale your earnings.</li>
+                </ul>
+                <a href="https://datalife-rank-pro.vercel.app/" target="_blank" class="btn-primary"><i class="fa fa-arrow-right"></i> Open Affiliate Signup</a>
+            </div>
+            <div class="joinus-iframe-card" data-aos="fade-left" data-aos-delay="120">
+                <iframe src="https://datalife-rank-pro.vercel.app/" title="DataLife Affiliate Signup Portal"></iframe>
             </div>
         </div>
     </section>
@@ -1662,7 +1751,7 @@
         <div class="section-header" style="text-align:center">
             <span class="section-label">Showcase</span>
             <h2 class="section-title">Website <span>Samples</span></h2>
-            <p class="section-sub" style="margin:0 auto">Three website examples we built for clients, complete with live visit links.</p>
+            <p class="section-sub" style="margin:0 auto">Four website examples we built for clients, complete with live visit links.</p>
         </div>
         <div class="website-samples-grid">
             <div class="sample-card" data-aos="fade-up" data-aos-delay="0">
@@ -1682,6 +1771,12 @@
                 <h3>datamyhome</h3>
                 <p>A find tutor near me website that helps students connect with local tutors quickly.</p>
                 <a href="https://datamyhome.vercel.app" target="_blank" class="btn-secondary">Visit Website</a>
+            </div>
+            <div class="sample-card" data-aos="fade-up" data-aos-delay="240">
+                <div class="sample-thumb"><img src="web5.png" alt="Web5 sample" /></div>
+                <h3>supacrown</h3>
+                <p>A premium brand website created for SupaCrown, showcasing products and business services with a polished online experience.</p>
+                <a href="https://supacrown.org" target="_blank" class="btn-secondary">Visit Website</a>
             </div>
         </div>
     </section>
