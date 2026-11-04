@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 66" color="#E5101C">
+                <ellipse cx="66" cy="27" rx="62" ry="22" fill="none" stroke="currentColor" stroke-width="3.4" />
+                <ellipse cx="66" cy="27" rx="57.5" ry="18" fill="none" stroke="currentColor" stroke-width="1" />
+                <text x="66" y="33" text-anchor="middle" textLength="96" lengthAdjust="spacingAndGlyphs" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="17" fill="currentColor">DATA LIFE</text>
+                <text x="66" y="61" text-anchor="middle" textLength="92" lengthAdjust="spacing" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="7.2" fill="currentColor">TECHNOLOGIES</text>
+            </svg>
